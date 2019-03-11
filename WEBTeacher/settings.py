@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'subject',
+    'index',
+    'MathModel',
+    'ChineseModel',
+    'EnglishModel',
 
 ]
 
