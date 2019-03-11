@@ -9,3 +9,7 @@ def main(request):
 
 def index(request):
     return render(request, 'index.html')
+
+
+def func():
+    pass
