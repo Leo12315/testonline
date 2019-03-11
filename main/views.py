@@ -7,9 +7,3 @@ def main(request):
     return render(request, 'main/main.html')
 
 
-def index(request):
-    return render(request, 'index.html')
-
-
-def func():
-    pass
