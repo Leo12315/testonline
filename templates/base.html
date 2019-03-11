@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--boostrap-->
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <!--vue-->
+    <script src="/static/js/vue.js"></script>
+    <title>My First Page</title>
+</head>
+<body>
+<div>
+    <nav class="navbar navar-inverse">
+        <ul class="navbar-header">
+            <a class="navbar-brand" href="#">My First Page</a>
+        </ul>
+    </nav>
+</div>
+<div class="container container-center jumbotron">
+    <div class="col-sm-4 clo-sm-offset-4">
+        <div id="app" class="form-group">
+            <p class="form-control" v-text="aaa"></p>
+            <span>Input here:</span>
+            <input class="form-control" v-model="aaa">
+        </div>
+    </div>
+</div>
+<script type="tetx/javascipt">
+		var vm=new Vue({
+			el:'#app',
+			data:{
+				aaa:'',
+			}
+		})
+
+</script>
+
+</body>
+</html>
